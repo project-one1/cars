@@ -1,0 +1,33 @@
+<button id="button"></button>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<button type="button" id="btn2"><img src="shut.png" /></button>
+
+<script type="text/javascript">
+    var buttons = document.getElementById("button");
+    buttons.innerHTML = '<img src="ajar.jpg" />';
+
+$(document).ready(function(){
+$('#imgDiv2').hide();
+$('#imgDiv').show();
+
+	$('#button').click(function(){
+   		$('#imgDiv2').hide();
+   		$('#imgDiv').show();
+	});
+  	$('#btn2').click(function(){
+  	$('#imgDiv').hide();
+    $('#imgDiv2').show();
+	});
+});
+
+</script>
+
+
+<div id="imgDiv2">
+	<img src="closed.png" alt="Door closed" />
+</div>
+<div id="imgDiv">
+	<img src="open.png" alt="Door open" />
+</div>
